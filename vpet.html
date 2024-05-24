@@ -1,0 +1,13 @@
+<html>
+	<body>
+		<button onclick="loadImageTag('sunglasses.png')">Empezar</button>
+		<img id="moodIMG" src="">
+	</body>
+
+<script>
+	function loadImageTag(imageURI){
+		const imageTag = document.getElementById("moodIMG")
+		imageTag.setAttribute("src", imageURI)
+	}
+</script>
+</html>
