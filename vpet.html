@@ -1,13 +1,14 @@
 <html>
+	<head>
+		<script src="core.js"></script>
+	</head>
 	<body>
-		<button onclick="loadImageTag('sunglasses.png')">Empezar</button>
-		<img id="moodIMG" src="">
+		<button id="runLoop" onclick="runLoop()">Empezar</button>
+		<button onclick="stopLoop()">Parar</button>
+		<br>
+		<div>
+			<img id="moodIMG" src="">
+			<div id="vPetData"></div>
+		</div>
 	</body>
-
-<script>
-	function loadImageTag(imageURI){
-		const imageTag = document.getElementById("moodIMG")
-		imageTag.setAttribute("src", imageURI)
-	}
-</script>
 </html>
